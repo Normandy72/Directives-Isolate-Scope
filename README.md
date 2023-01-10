@@ -81,3 +81,13 @@ function MyDirective(){
 We can do the regular interpolation inside of the my-attribute:
 
 `<my-directive my-attribute="Hi {{outerProp + '!'}}"></my-directive>`
+***
+##### _Summary_
+* Having isolate scope on the directive
+    * breaks the prototypal inheritance of the scope from the parent;
+    * makes the directive more independent, less coupled with the controller.
+* We pass values into the derective using scope bindings.
+* Bidirectional binding ('=') is such that directive scope property change affects the bound property and visa versa.
+* DOM attribute value binding ('@') always results in directive property being a string.
+    * Changes to DOM attribute value are propogated to the directive property, but not the other way around. 
+***

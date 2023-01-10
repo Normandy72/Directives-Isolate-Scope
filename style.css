@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+}
+
+#list1, #list2{
+    width: 45%;
+}
+
+.error{
+    color: red;
+}
